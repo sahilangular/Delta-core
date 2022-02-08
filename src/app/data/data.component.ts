@@ -27,13 +27,13 @@ export class DataComponent implements OnInit {
    }
    ngOnInit(): void {
     
-    this.productservice.getdata().subscribe()
-    this.dataservice.send.subscribe((val:ProductModule[])=>{
+    // this.productservice.getdata().subscribe()
+    // this.dataservice.send.subscribe((val:ProductModule[])=>{
       
-      this.dataservice.setdata1(val)
+    //   this.dataservice.setdata(val)
       
     
-    })
+    // })
   }
 
 }

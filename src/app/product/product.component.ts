@@ -15,7 +15,7 @@ export class ProductComponent implements OnInit {
     this.productservice.getdata().subscribe()
     this.dataservice.send.subscribe((val:ProductModule[])=>{
       this.product=val
-      this.dataservice.setdata1(val)
+      
       console.log(this.product)
     })
   }
