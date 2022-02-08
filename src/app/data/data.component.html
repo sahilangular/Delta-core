@@ -1,0 +1,13 @@
+<app-navigation></app-navigation>
+<div class="container-fluid" >
+    <form #form = 'ngForm' (ngSubmit)="click(form)">
+        <label>productid:</label><br>
+        <input type="number" name="productid" ngModel required style="width: 30%;" #id class="a"><br>
+        <label>Name:</label><br>
+        <input type="text" name="productname" ngModel required class="a" #name  style="width: 30%;"><br>
+        <label>Description:</label><br>
+        <input type="text" name="description" ngModel  required class="a" #description  style="width: 30%;"><br>
+        <button type="submit" [disabled]="!form.valid" class="btn btn-primary" >click</button>
+
+</form>
+</div>

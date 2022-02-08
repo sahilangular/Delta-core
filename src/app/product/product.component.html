@@ -1,0 +1,19 @@
+<app-navigation></app-navigation>
+<table class="table">
+    <thead>
+      <tr>
+       
+        <th scope="col">productid</th>
+        <th scope="col">productname</th>
+        <th scope="col">description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of product">
+      
+        <td>{{product.productid}}</td>
+        <td>{{product.productname}}</td>
+        <td>{{product.description}}</td>
+      </tr>
+    </tbody>
+  </table>
